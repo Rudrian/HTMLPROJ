@@ -1,63 +1,91 @@
 body {
     font-family: 'Georgia', serif; /* Fonte serifada para um toque literário */
     background-image: url(../img/bandeiras-de-portugal-e-do-brasil-no-conceito-de-relacionamento-politico-de-superficie-rachada_764664-31025.avif);
-    background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
     color: #333; /* Cor do texto */
     margin: 0;
     padding: 0;
 }
-
+ 
 header {
     background-color: rgb(19, 170, 19); /* Camada verde */
     color: white;
     padding: 20px;
     display: flex;
-    flex-direction: column; /* Organiza logo e título em coluna */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    position: relative;
     text-align: center; /* Centraliza o texto do h1 */
 }
-
+ 
 .logo img {
     max-width: 150px; /* Limita o tamanho da logo */
 }
-
-main {
+ 
+nav {
+    background-color: #003c0a; /* Azul mais claro */
+}
+ 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+}
+ 
+nav li {
+    margin: 0 15px; /* Espaço entre os links */
+}
+ 
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s; /* Efeito suave na mudança de fundo */
+}
+ 
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo claro ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+ 
+.conteudo {
     padding: 20px;
-    text-align: center; /* Centraliza o texto no main */
+    text-align: center;
+    margin: 20px; /* Margem ao redor da seção */
+    border: 1px solid #000000; /* Borda suave ao redor do conteúdo */
+    background-color: #a2ff90; /* Azul claro */
+    border-radius: 10px; /* Bordas arredondadas */
 }
-
-.NCash img {
-    max-width: 100px; /* Limita o tamanho da imagem N-Cash */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
+ 
 h2 {
-    font-size: 1.0em; /* Tamanho do título */
+    font-size: 2.5em; /* Tamanho do título */
     margin: 10px 0; /* Margens do título */
 }
-
+ 
 h3 {
-    font-size: 1.0em; /* Tamanho do subtítulo */
+    font-size: 1.5em; /* Tamanho do subtítulo */
     line-height: 1.6; /* Espaçamento entre linhas */
     margin: 10px 0; /* Margens do subtítulo */
 }
-
+ 
 h4 {
     font-size: 1.2em; /* Tamanho da frase final */
     margin: 20px 0; /* Margens da frase final */
     color: #006a07; /* Cor do texto da frase final */
 }
-
+ 
 footer {
     background-color: #039f00; /* Mesma cor do cabeçalho */
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed; /* Permite que o footer fique embaixo */
+    position:fixed; /* Permite que o footer fique embaixo */
     bottom: 0;
     width: 100%; /* Largura total */
 }
-
+ 
 footer p {
     margin: 0; /* Remove margens padrão */
     font-size: 0.9em; /* Tamanho da fonte do footer */
